@@ -6,27 +6,7 @@
     <link rel="stylesheet" href="./main.css">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <style>
-    * { box-sizing: border-box; font-family: Corbel; }
-    div {
-      padding: 10px;
-      background-color: #f6f6f6;
-      overflow: hidden;
-    }
-    input[type=text], textarea, select {
-      font-size: 18px;
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    input[type=button]{ 
-      font-size: 18px;
-      width: auto;
-      float: right;
-      cursor: pointer;
-      padding: 7px;
-    }
-    a { color: blue; }
+  
   </style>
 </head>
 
@@ -44,45 +24,27 @@
     <video src="./Secuencia.mp4" muted loop autoplay playsinline></video>
     <div class="overlay"></div>
     <div class="text">
-    
-       <div>
-    <!--Add few elements to the form-->
-
-    <div>
-      <input type="text" id="txtName" placeholder="Enter your name" />
+        
+        <div class="container">
+  <h1>FormSubmit Demo</h1>
+  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
     </div>
-    <div>
-      <input type="text" id="txtAge" placeholder="Enter your age" />
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
     </div>
-    <div>
-      <input type="text" id="txtEmail" 
-             placeholder="Enter your email address" />
-    </div>
-    <div>
-      <select id="selCountry">
-        <option selected value="">-- Choose the country --</option>
-        <option value="India">India</option>
-        <option value="Japan">Japan</option>
-        <option value="USA">USA</option>
-      </select>
-    </div>
-    <div>
-      <textarea id="msg" name="msg" 
-      	placeholder="Write some message ..." style="height:100px">     </textarea>
-    </div>
-    <div>
-      <input type="button" id="bt" 
-             value="Save data to file" onclick="saveFile()" />
-    </div>
-  </div>
-      
-      
-    </div>
-    <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-    </ul>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
+ </div>
   </section>
   
     <script>
