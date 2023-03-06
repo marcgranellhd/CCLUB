@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galería de imágenes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins');
+*		
+		body{
+			font-family: 'Poppins', sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 15px;
+		}
+		
+		.image {
+			
+			margin: 30px;
+			text-align: center;
+		}
+		
+		.image img {
+			display: block;
+			width: 350px;
+			height: 350px;
+			object-fit: cover;
+			border-radius: 5px;border-radius: 100%;
+			border: 20px solid white;
+		}
+		
+		.image h1 {
+			color: white;
+			margin-top: 10px;
+			font-size: 20px;
+			font-weight: bolder;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.image {
+				flex: 0 0 calc(50% - 20px);
+			}
+		}
+		
+		@media only screen and (max-width: 480px) {
+			.image {
+				flex: 0 0 calc(100% - 20px);
+			}
+		}
+
+		video {
+		  position: fixed;
+		  z-index: -2;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		  opacity: 0.8;
+		}
+	</style>
+</head>
+<body>
+	<video src="./Secuencia.mp4" muted loop autoplay playsinline></video>
+	<div class="container">
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=1" alt="Imagen 1">
+			<h1>BCNKUSH</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=2" alt="Imagen 2">
+			<h1>1UP</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=3" alt="Imagen 3">
+			<h1>HIGH CLASS</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=4" alt="Imagen 4">
+			<h1>GREEN PALACE</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=5" alt="Imagen 5">
+			<h1>LA KALADA</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=6" alt="Imagen 6">
+			<h1>HOLLYWEED</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=7" alt="Imagen 7">
+			<h1>THE SPOT</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=8" alt="Imagen 8">
+			<h1>ZONA 7</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=9" alt="Imagen 9">
+			<h1>ALICE</h1>
+		</div>
+		<div class="image">
+			<img src="https://picsum.photos/600/400?random=10" alt="Imagen 10">
+			<h1>ALTOJARDI</h1>
+		</div>
+			</body>
+	</html>
