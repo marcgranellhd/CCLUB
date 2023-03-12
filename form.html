@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Hello Deploy Now build with plain html</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+    
+
+    
+<!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">CCLUB.ES</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="./Secuencia-01.mp4" muted loop autoplay playsinline></video>
+    <div class="overlay"></div>
+    <div class="text">
+      
+
+  <h1>Te informamos</h1>
+  <form target="_blank" action="https://formsubmit.co/marcgranellhd@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+         <select name="Eres" id="language">
+  <option value="CLUB">CLUB</option>
+  <option value="SOCIO">SOCIO</option>
+</select>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+
+      
+    </div>
+    <ul class="social">
+      <li><a href="https://twitter.com/marcgranellhd"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/cclub.es/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="https://cclub.es/">Home</a></li>
+      <li><a href="#">Únete</a></li>
+      <li><a href="#">Clubs</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+    <script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+
+</html>
